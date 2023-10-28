@@ -424,9 +424,16 @@ input[type="file"] {
         place-items: center;
     }
 
+    .btn-all {
+        margin-left: 10px;
+    }
+    
+
+
     .btn-guardar {
         float: left;
         margin-top: 20px;
+        margin-left: 10px;
     }
 
     .form-container>div>div {
