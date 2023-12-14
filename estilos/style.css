@@ -469,6 +469,14 @@ input[type="file"] {
 
 #mostrar-imagen-doc {
     max-height: 300px;
+    max-width: 350px;
+
+}
+
+#mostrar-imagen-doc > img {
+    max-height: 300px;
+    max-width: 350px;
+    padding-top: 10px;
 
 }
 
