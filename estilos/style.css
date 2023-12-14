@@ -206,7 +206,7 @@ h1 {
 
 .dashboard-main {
     padding-left: 300px;
-    padding-top: 100px;
+    padding-top: 90px;
     transition: all 500ms;
     margin: auto;
     width: 100%;
@@ -462,6 +462,9 @@ input[type="file"] {
     display: flex;
     justify-content: space-around;
     width: 90%;
+    background-color: #f7f8f8;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 #mostrar-imagen-doc {
@@ -506,7 +509,7 @@ input[type="file"] {
 
 .container {
     width: 400px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     /* Cambié el color de fondo */
     padding: 20px;
     border-radius: 8px;
@@ -559,6 +562,7 @@ button:hover {
 
 .card {
     width: 190px;
+    height: 120px;
     background-color: #f8f9fa;
     /* Cambié el color de fondo */
     padding: 20px;
@@ -582,17 +586,18 @@ button:hover {
 .container-right {
     width: 400px;
     height: 500px;
-    background-color: #f8f9fa;
+    background-color: #fff;
     /* Cambié el color de fondo */
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 8px;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.018);
     position: relative;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    border: 1px solid #28324735;
 }
 
 
