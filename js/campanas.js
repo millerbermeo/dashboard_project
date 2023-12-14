@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayDataInTable(data) {
         const tableBody = document.getElementById('table-body');
-        
+
         // Limpiar la tabla antes de mostrar los resultados actualizados
         tableBody.innerHTML = '';
 
@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${item.nombre}</td>
                 <td>${item.mensaje}</td>
                 <td><a class="url-link" href="${item.url}">${item.url}</a></td>
+                <td>
+                <button class="button update-button">Editar</button>
+                <button class="button delete-button">Eliminar</button>
+            </td>
             `;
             tableBody.appendChild(row);
         });
