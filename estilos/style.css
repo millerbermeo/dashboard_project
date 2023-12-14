@@ -18,7 +18,7 @@ body {
 .navbar {
     width: 100%;
     height: 60px;
-    
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -429,7 +429,17 @@ input[type="file"] {
     .btn-all {
         margin-left: 10px;
     }
-    
+
+    .content-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 
 
     .btn-guardar {
@@ -451,6 +461,7 @@ input[type="file"] {
 .content-flex {
     display: flex;
     justify-content: space-around;
+    width: 90%;
 }
 
 #mostrar-imagen-doc {
@@ -465,7 +476,7 @@ input[type="file"] {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
-    max-height: 150px;
+    max-height: 90px;
     overflow-y: auto;
 }
 
@@ -486,11 +497,17 @@ input[type="file"] {
     outline: none;
 }
 
-
+.mensaje {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 10px;
+}
 
 .container {
     width: 400px;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    /* Cambié el color de fondo */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -517,7 +534,8 @@ textarea {
 button {
     position: absolute;
     bottom: 20px;
-    background-color: #242e42;
+    background-color: #007bff;
+    /* Cambié el color de fondo */
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -527,20 +545,22 @@ button {
 }
 
 button:hover {
-    background-color: #2d374b;
+    background-color: #0056b3;
+    /* Cambié el color de fondo al pasar el ratón */
 }
-
 
 .card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     width: 400px;
+    margin-top: 10px;
 }
 
 .card {
     width: 190px;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    /* Cambié el color de fondo */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -548,22 +568,10 @@ button:hover {
     text-align: center;
 }
 
-input {
-    display: none;
-}
-
-label {
-    cursor: pointer;
-    display: block;
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+.fa-file,
+.fa-image {
+    font-size: 25px;
+    color: #242e42;
 }
 
 .placeholder {
@@ -571,11 +579,11 @@ img {
     color: #888;
 }
 
-
 .container-right {
     width: 400px;
     height: 500px;
-    background-color: #fff;
+    background-color: #f8f9fa;
+    /* Cambié el color de fondo */
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 8px;
@@ -585,6 +593,11 @@ img {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+}
+
+
+.label-text {
+    font-weight: bold;
 }
 
 /* CAMPAÑAS CSSS */
@@ -602,7 +615,8 @@ img {
     margin-bottom: 20px;
 }
 
-.data-table th, .data-table td {
+.data-table th,
+.data-table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;

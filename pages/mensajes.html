@@ -52,27 +52,42 @@
         <div class="content-flex">
             <div>
                 <div>
-                    <label for="campana">Nombre Campaña</label>
+                    <label class="label-text" for="campana">Nombre Campaña</label>
                     <input type="text" id="campana" class="text-input" placeholder="Ingrese la Campaña" required>
                 </div>
     
                 <div class="container">
-                    <label for="texto">Ingrese texto:</label>
+                    <label for="texto" class="label-text">Nuevo Mensaje:</label>
                     <textarea id="texto" name="texto" placeholder="Escriba su mensaje aqui..."></textarea>
                 </div>
     
                 <div class="card-container">
+
+                    <label for="imagenInput">
                     <div class="card">
-                        <label for="imagenInput">Imagen</label>
+                        <i class="fa-solid fa-image"></i>
+                       <div>
+                        Imagen
+                       </div>
                         <input type="file" id="imagenInput" accept="image/*">
                         <div class="placeholder">No se ha seleccionado ningún Imgen</div>
                     </div>
-    
+                </label>
+
+
+
+                    <label for="documentoInput">
                     <div class="card">
-                        <label for="documentoInput">Documento</label>
+                       
+                        <i class="fa-solid fa-file"></i>
+                        <div>
+                            Documento
+                        </div>
                         <input type="file" id="documentoInput" accept=".pdf, .doc, .docx">
                         <div class="placeholder">No se ha seleccionado ningún documento</div>
+                 
                     </div>
+                </label>
                 </div>
             </div>
     
@@ -82,6 +97,7 @@
     
                     <div id="mostrar-imagen-doc"></div>
                     <div id="mostrar-documento"></div>
+                    <span class="mensaje">Mensaje:</span>
                     <div id="mostrar-texto"></div>
 
                     <button id="submit-button" type="submit">Enviar</button>
