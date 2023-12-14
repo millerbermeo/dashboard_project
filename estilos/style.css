@@ -614,6 +614,8 @@ textarea {
     font-weight: bold;
 }
 
+
+
 /* CAMPAÑAS CSSS */
 
 
@@ -661,6 +663,7 @@ textarea {
 
 .search-container {
     position: relative;
+    width: 200px;
 }
 
 .search-input {
@@ -701,4 +704,10 @@ textarea {
     background-color: #333f58;
 }
 
+
+.fa-magnifying-glass {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
 
