@@ -648,3 +648,19 @@ button:hover {
 .url-link:hover {
     text-decoration: underline;
 }
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    width: 200px;
+    padding: 10px 30px 10px 10px; /* Ajusté el padding para dar espacio al icono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    margin-top: 10px;
+}
+
+

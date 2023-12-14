@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    //ESTA ES UNA API LOCAL QUE HICE ELLA RESPONDE CON id, nombre, mensaje y url
-
     const apiUrl = 'http://127.0.0.1:8000/api/campana';
+
+    // Obtener referencia al input de búsqueda
+    const searchInput = document.querySelector('.search-input');
 
     fetch(apiUrl)
         .then(response => {
@@ -14,6 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             console.log('Datos recibidos:', data);
             displayDataInTable(data);
+
+            // Agregar evento de escucha al input de búsqueda
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                const filteredData = data.filter(item => item.nombre.toLowerCase().includes(searchTerm));
+                displayDataInTable(filteredData);
+            });
         })
         .catch(error => {
             console.error('Error en la solicitud:', error);
@@ -21,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function displayDataInTable(data) {
         const tableBody = document.getElementById('table-body');
+        
+        // Limpiar la tabla antes de mostrar los resultados actualizados
+        tableBody.innerHTML = '';
 
         data.forEach(item => {
             const row = document.createElement('tr');
